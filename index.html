@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form-field">
+        <fieldset class="field">
+            <section class="form">
+                <h6>Form</h6>
+                <div class="f-n">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter your First name">
+                </div>
+                <div class="l-n">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+                </div>
+                <div class="addr">
+                    <label>Address:</label>
+                    <div>
+                        <input type="text" name="address" id="address">
+                        <input type="text" name="state" id="state">
+                        <input type="text" name="country" id="country">
+                    </div>
+                </div>
+                <div class="pin">
+                    <label for="pincode">Pincode:</label>
+                    <input type="text" id="pincode" name="pincode" pattern="\d{6}" title="Please enter valid Pincode">
+                </div>
+                <div class="gen">
+                    <label>Gender:</label>
+                    <div class="male">
+                        <input type="radio" name="gender" id="male" value="male">Male
+                    </div>
+                    <div class="female">
+                        <input type="radio" name="gender" id="female" value="female">Female
+                    </div>
+                    <div class="others">
+                        <input type="radio" name="gender" id="others" value="others">Others
+                    </div>
+                </div>
+                <div class="f-d">
+                    <label for="food-choice">Foods:</label>
+                    <select name="foods" id="food-choice" multiple title="Please select 2 types of prefered foods">
+                        <option value="south-indian">South Indian</option>
+                        <option value="north-indian">North Indian</option>
+                        <option value="french">French</option>
+                        <option value="italian">Italian</option>
+                        <option value="mexican">Mexican</option>
+                    </select>
+                </div>
+                <div class="btn">
+                    <button type="submit" id="submit" value="submit">Submit</button>
+                    <!-- <button type="reset" id="reset">Reset</button> -->
+                </div>
+            </section>
+        </fieldset>
+    </form>
+
+
+    <section>
+        <h6>FORM DATA</h6>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>Food</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>john</td>
+                    <td>wick</td>
+                    <td>123</td>
+                    <td>tamil nadu</td>
+                    <td>india</td>
+                    <td>451258</td>
+                    <td>male</td>
+                    <td>south-indian</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

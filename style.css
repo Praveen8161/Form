@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h6{
+    display: none;
+}
+
+body{
+    height: 250vh;
+}
+
+.field{
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(to left,orange,orange);
+}
+
+.form{
+    background: radial-gradient(rgb(177, 139, 67),rgb(190, 79, 79));
+    width: 80%;
+    margin: 5px 20% 5px 20%;
+    border: none;
+    height: min(max(50vh,50%),max(100vh,100%));
+    display: grid;
+    grid-template-columns: min(40%,max(100vw,100%));
+    border-radius: 5px;
+}
+
+input{
+    border: 1px solid black;
+    height: 1.5rem;
+}
+
+textarea{
+    height: 2rem;
+}
+
+.f-n, .l-n, .addr, .pin,
+.gen, .f-d, .btn{
+    flex-shrink: 2;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 10px;
+}
+
+.addr div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top:40px;
+    gap: 0.5rem;
+}
+
+.f-d select{
+    min-width: 100px;
+    width: 200px;
+    padding: 5px;
+    height: 3rem;
+}
+
+.f-d::after{
+    content: "*select 2 foods";
+    color:white;
+}
+
+
+label{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.male, .female, .others{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.btn{
+    flex-flow: row nowrap;
+    gap: 2rem;
+}
+
+.btn button{
+    padding: 5px 10px;
+    border: none;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+table,th,td{
+    border-collapse: collapse;
+    font-size: 1rem;
+    height: auto;
+    border: 1px solid black;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+}
