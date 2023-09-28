@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="form-field">
+    <h1 id="title">FORM SUBMISSION</h1>
+    <p id="description"> collect and store data to the table</p>
+    <form id="form">
         <fieldset class="field">
-            <section class="form">
-                <h6>Form</h6>
+            <div class="form-sec">
                 <div class="f-n">
                     <label for="first-name">First Name:</label>
                     <input type="text" id="first-name" name="first-name" placeholder="Enter your First name">
@@ -22,14 +23,14 @@
                 <div class="addr">
                     <label>Address:</label>
                     <div>
-                        <input type="text" name="address" id="address">
-                        <input type="text" name="state" id="state">
-                        <input type="text" name="country" id="country">
+                        <textarea name="address" id="address" cols="20" rows="13" placeholder="Enter Address"></textarea>
+                        <input type="text" name="state" id="state" placeholder="Enter state">
+                        <input type="text" name="country" id="country" placeholder="enter country">
                     </div>
                 </div>
                 <div class="pin">
                     <label for="pincode">Pincode:</label>
-                    <input type="text" id="pincode" name="pincode" pattern="\d{6}" title="Please enter valid Pincode">
+                    <input type="text" id="pincode" name="pincode" pattern="\d{6}" title="Please enter valid Pincode" placeholder="enter pincode">
                 </div>
                 <div class="gen">
                     <label>Gender:</label>
@@ -57,13 +58,12 @@
                     <button type="submit" id="submit" value="submit">Submit</button>
                     <!-- <button type="reset" id="reset">Reset</button> -->
                 </div>
-            </section>
+            </div>
         </fieldset>
     </form>
 
 
-    <section>
-        <h6>FORM DATA</h6>
+    <div>
         <table id="table">
             <thead>
                 <tr>
@@ -90,7 +90,8 @@
                 </tr>
             </tbody>
         </table>
-    </section>
+    </div>
     <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
 </body>
 </html>
